@@ -6,17 +6,19 @@ filetype off
 filetype plugin on
 filetype indent on
 
-nmap <c-h> <c-w>h<c-w>
-nmap <c-l> <c-w>l<c-w>
-nmap <c-j> <c-w>j<c-w>
-nmap <c-k> <c-w>k<c-w>
+nnoremap <c-h> <c-w>h<c-w>
+nnoremap <c-l> <c-w>l<c-w>
+nnoremap <c-j> <c-w>j<c-w>
+nnoremap <c-k> <c-w>k<c-w>
+nnoremap <silent> <Leader>f :CtrlP<Enter>
+nnoremap <silent> <Leader>n :NERDTree<Enter>
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
-Plugin 'junegunn/fzf'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
