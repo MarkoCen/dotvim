@@ -1,2 +1,2 @@
 # dotvim
-My Vim configuration file :)
+My Vim configuration file, still working on it :)
