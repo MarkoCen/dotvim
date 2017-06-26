@@ -1,4 +1,5 @@
 set nocompatible
+set shellpipe=>
 set number
 set wmh=0
 
@@ -6,11 +7,17 @@ filetype off
 filetype plugin on
 filetype indent on
 
-nnoremap <c-h> <c-w>h<c-w>
-nnoremap <c-l> <c-w>l<c-w>
-nnoremap <c-j> <c-w>j<c-w>
-nnoremap <c-k> <c-w>k<c-w>
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+
+command -nargs=1 FindInFiles :grep! -R "<args>" .
+
+nnoremap <c-h> <c-w>h<c-w><esc>
+nnoremap <c-l> <c-w>l<c-w><esc>
+nnoremap <c-j> <c-w>j<c-w><esc>
+nnoremap <c-k> <c-w>k<c-w><esc>
 nnoremap <silent> <Leader>f :CtrlP<Enter>
+nnoremap <Leader>f :FindInFiles 
 nnoremap <silent> <Leader>n :NERDTree<Enter>
 
 set rtp+=~/.vim/bundle/Vundle.vim
