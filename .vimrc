@@ -10,8 +10,6 @@ set smartcase
 set hls
 
 filetype off
-filetype plugin on
-filetype indent on
 
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
@@ -29,14 +27,20 @@ nnoremap <silent> <Leader>n :NERDTree<Enter>
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'digitaltoad/vim-pug'
+
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
+Plugin 'digitaltoad/vim-pug'
 Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'ianks/vim-tsx'
+
 Plugin 'Zenburn'
 Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'jiangmiao/auto-pairs'
