@@ -15,7 +15,7 @@ autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
 autocmd InsertEnter,InsertLeave * set cul!
 
-command -nargs=1 FindInFiles :grep! -R "<args>" .
+command -nargs=1 FindInFiles :vimgrep! -R "<args>" .
 
 nnoremap <c-h> <c-w>h<c-w><esc>
 nnoremap <c-l> <c-w>l<c-w><esc>
