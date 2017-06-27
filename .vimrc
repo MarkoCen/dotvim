@@ -1,8 +1,12 @@
+let mapleader=";"
+
 set nocompatible
 set t_Co=256
 set shellpipe=>
 set number
 set wmh=0
+set ignorecase
+set smartcase
 
 filetype off
 filetype plugin on
