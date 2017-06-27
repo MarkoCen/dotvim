@@ -1,4 +1,5 @@
 set nocompatible
+set t_Co=256
 set shellpipe=>
 set number
 set wmh=0
@@ -30,6 +31,7 @@ Plugin 'digitaltoad/vim-pug'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'pangloss/vim-javascript'
+Plugin 'Zenburn'
 
 call vundle#end()
 filetype plugin indent on
@@ -39,6 +41,9 @@ let g:airline_theme='solarized'
 set encoding=utf-8
 set fileencoding=utf-8
 
+colorscheme zenburn
+
+syntax enable
 syntax on
 
 autocmd VimEnter * NERDTree
