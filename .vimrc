@@ -36,6 +36,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+Plugin 'vim-syntastic/syntastic'
+
 Plugin 'digitaltoad/vim-pug'
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
@@ -46,9 +48,23 @@ Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end()
-filetype plugin indent on
 
+" begin setup airline
 let g:airline_theme='badwolf'
+" end setup airline
+
+" setup syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" end setup syntastic
+
+filetype plugin indent on
 
 set encoding=utf-8
 set fileencoding=utf-8
