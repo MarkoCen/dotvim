@@ -36,7 +36,7 @@ Plugin 'Zenburn'
 call vundle#end()
 filetype plugin indent on
 
-let g:airline_theme='solarized'
+let g:airline_theme='badwolf'
 
 set encoding=utf-8
 set fileencoding=utf-8
