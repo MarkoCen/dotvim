@@ -21,7 +21,7 @@ nnoremap <c-h> <c-w>h<c-w><esc>
 nnoremap <c-l> <c-w>l<c-w><esc>
 nnoremap <c-j> <c-w>j<c-w><esc>
 nnoremap <c-k> <c-w>k<c-w><esc>
-nnoremap <silent> <Leader>f :CtrlP<Enter>
+nnoremap <silent> <Leader>p :CtrlP ./<Enter>
 nnoremap <Leader>f :FindInFiles 
 nnoremap <silent> <Leader>n :NERDTree<Enter>
 
