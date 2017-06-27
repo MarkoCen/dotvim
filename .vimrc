@@ -7,6 +7,7 @@ set number
 set wmh=0
 set ignorecase
 set smartcase
+set hls
 
 filetype off
 filetype plugin on
