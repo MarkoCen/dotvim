@@ -14,6 +14,7 @@ filetype indent on
 
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
+autocmd InsertEnter,InsertLeave * set cul!
 
 command -nargs=1 FindInFiles :grep! -R "<args>" .
 
