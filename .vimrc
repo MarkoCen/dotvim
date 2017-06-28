@@ -1,5 +1,6 @@
 let mapleader=";"
 
+" setup options
 set nocompatible
 set t_Co=256
 set shellpipe=>
@@ -8,6 +9,12 @@ set wmh=0
 set ignorecase
 set smartcase
 set hls
+set encoding=utf-8
+set fileencoding=utf-8
+set tabstop=4
+set shiftwidth=4
+set expandtab
+" end setup options
 
 filetype off
 
@@ -43,6 +50,11 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'ianks/vim-tsx'
 
+Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 Plugin 'Zenburn'
 Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'jiangmiao/auto-pairs'
@@ -64,10 +76,13 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " end setup syntastic
 
-filetype plugin indent on
+" setup snippets
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" end setup snippets
 
-set encoding=utf-8
-set fileencoding=utf-8
+filetype plugin indent on
 
 colorscheme zenburn
 
