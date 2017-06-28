@@ -51,7 +51,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'ianks/vim-tsx'
 
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
