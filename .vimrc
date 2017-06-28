@@ -38,6 +38,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'bling/vim-airline'
